@@ -1,0 +1,75 @@
+.alert-debug {
+  background-color: #fff;
+  border-color: #d6e9c6;
+  color: #000; }
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48; }
+
+.header {
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.paragraph {
+  font-family: 'Merriweather';
+  font-weight: 300;
+  font-size: 15px; }
+
+.sub-header-1 {
+  font-family: 'Josefin Sans';
+  font-size: 20px; }
+
+.white {
+  color: white; }
+
+.navy {
+  color: #0E212B; }
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.content {
+  max-width: 970px; }
+
+.banner {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin-top: -10px;
+  min-height: 100%; }
+
+.text-center {
+  text-align: center; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+#about {
+  background-color: #F9F7F3;
+  min-height: 100%; }
+
+#accommodations {
+  background-color: #F79C88;
+  min-height: 100%; }
+
+.gold {
+  color: #C9974D; }
+
+.navbar-brand {
+  font-family: 'Josefin Sans';
+  font-size: 15px;
+  color: #C9974D !important; }
+
+[hidden][style="display: block;"] {
+  display: block !important; }
