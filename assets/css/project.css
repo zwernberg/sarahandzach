@@ -61,7 +61,8 @@
 
 #accommodations {
   background-color: #F79C88;
-  min-height: 100%; }
+  min-height: 100%; 
+  padding-bottom: 25px;}
 
 .gold {
   color: #C9974D; }
@@ -73,3 +74,20 @@
 
 [hidden][style="display: block;"] {
   display: block !important; }
+
+.reserve-link-style {
+  text-decoration: none;
+  font-family: 'Merriweather';
+  font-weight: 400;
+  color: #0E212B;
+  font-size: 1rem;
+  letter-spacing: 0.175rem;
+  border: 3px solid #0E212B;
+  padding: 5px;
+   }
+  
+.reserve-link-style:hover {
+  color: #0E212B;
+  text-decoration: none;
+  background-color: #F9F7F3;
+}
