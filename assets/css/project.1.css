@@ -30,13 +30,43 @@
 .navy {
   color: #0E212B; }
 
+label {
+  margin-bottom: 0;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.guest-row {
+  margin-bottom:1rem;
+}
+
+.rsvp-buttons {
+  padding-top: 1rem;
+}
+.radio-inline {
+  padding-right: 1rem;
+}
+/* .form-row {
+  padding-bottom: .5rem;
+} */
+.form-check-inline+.form-check-inline {
+  margin-left: 0;
+}
+
+@media (max-width: 768px){ 
+  .radio-inline{
+  display: block; 
+  }
+}
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px; 
+}
 
 .content {
   max-width: 970px; }
@@ -49,13 +79,14 @@
   min-height: 100%; }
 
 .text-center {
-  text-align: center; }
+  text-align: center; 
+}
 
 .row {
   margin-right: -15px;
   margin-left: -15px; }
 
-#about {
+#about, #rsvp {
   background-color: #F9F7F3;
   min-height: 100%; }
 
@@ -91,8 +122,6 @@
 .ml-auto > a:hover {
   color: #C9974D !important;
 }
-
-
 
 .gold {
   color: #C9974D; }

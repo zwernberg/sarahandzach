@@ -237,6 +237,106 @@
       </div>
     </div>
 
+  <div class="container-fluid" id="rsvp">
+    <div class="container content">
+      <div class="col-sm-8 mx-auto">
+        <p class="header gold text-center">RSVP</p>
+        <form class="rsvp-form" id="rsvp-form">
+          <div class="form-group">
+            <label class="col-xs-4"></label>
+            <div class="col-xs-8">
+              <input id="name" name="name" placeholder="Enter your full name..." type="text" class="form-control paragraph" required="required">
+            </div>
+            <div class="col-xs-8">
+              <label class="radio-inline paragraph">
+                <input type="radio" name="attending" value="True"> Will attend
+              </label>
+              <label class="radio-inline paragraph">
+                <input type="radio" name="attending" value="False"> Will not attend
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-4 font-weight-bold sub-header-2 navy">ENTREE</label>
+            <div class="col-xs-8">
+              <label class="radio-inline paragraph">
+                <input type="radio" name="food_choice" value="0"> Filet Mignon
+              </label>
+              <label class="radio-inline paragraph">
+                <input type="radio" name="food_choice" value="1"> Salmon Filet
+              </label>
+              <label class="radio-inline paragraph">
+                <input type="radio" name="food_choice" value="2"> Artichoke Penne
+              </label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-xs-4 font-weight-bold sub-header-2 navy">IF BRINGING A GUEST(S)</label>
+            <div class="col-xs-8 guest-row">
+                <input name="guest1-name" placeholder="Enter guest's name" type="text" class="form-control paragraph">
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest1-food_choice" value="0"> Filet Mignon
+                </label>
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest1-food_choice" value="1"> Salmon Filet
+                </label>
+                <label class="adio-inline paragraph">
+                  <input type="radio" name="guest1-food_choice" value="2"> Artichoke Penne
+                </label>
+            </div>
+            <div class="col-xs-8 guest-row">
+                <input name="guest2-name" placeholder="Enter guest's name" type="text" class="form-control paragraph">
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest2-food_choice" value="0"> Filet Mignon
+                </label>
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest2-food_choice" value="1"> Salmon Filet
+                </label>
+                <label class="adio-inline paragraph">
+                  <input type="radio" name="guest2-food_choice" value="2"> Artichoke Penne
+                </label>
+            </div>
+            <div class="col-xs-8 guest-row">
+                <input name="guest3-name" placeholder="Enter guest's name" type="text" class="form-control paragraph">
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest3-food_choice" value="0"> Filet Mignon
+                </label>
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest3-food_choice" value="1"> Salmon Filet
+                </label>
+                <label class="adio-inline paragraph">
+                  <input type="radio" name="guest3-food_choice" value="2"> Artichoke Penne
+                </label>
+            </div>
+            <div class="col-xs-8 guest-row">
+                <input name="guest4-name" placeholder="Enter guest's name" type="text" class="form-control paragraph">
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest4-food_choice" value="0"> Filet Mignon
+                </label>
+                <label class="radio-inline paragraph">
+                  <input type="radio" name="guest4-food_choice" value="1"> Salmon Filet
+                </label>
+                <label class="adio-inline paragraph">
+                  <input type="radio" name="guest4-food_choice" value="2"> Artichoke Penne
+                </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-xs-4 font-weight-bold sub-header-2 navy">SONG THAT WILL GET YOU DANCING</label>
+            <div class="col-xs-8">
+              <input id="song" name="song" placeholder="Name of song..." type="text" class="paragraph form-control">
+            </div>
+          </div>
+          <div class="form-group row rsvp-buttons">
+              <div class="col-xs-offset-4 col-xs-8">
+                <button name="submit" class="btn btn-outline-secondary paragraph" id="rsvp-submit">Submit</button>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
     <!-- ================================================== -->
     <!-- Required by Bootstrap v4 beta -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>

@@ -22,21 +22,28 @@ $('.form-group').removeClass('row');
 
 
 $(document).ready(function() {
-    $("#decline-button").click(function(event){
+    $("#rsvp-submit-DISABLEDFORNOW").click(function(event){
+        guests = [
+            {
+                "name": $('input[name=guest1-name]').val(),
+                "food_choice": $('input[name=guest1-food_choice]:checked').val()
+            }
+        ]
+        var dataToSend =
+            {
+            "name": $('#name').val(),
+            "attending": $('input[name=attending]:checked').val(),
+            "food_choice": $('input[name=food_choice]:checked').val(),
+            "guests": guests
+            };
          $.ajax({
               type:"POST",
-              url:"/invite/decline/",
-              data: {
-                     'name': $('#decline-name').val(),
-                     'message': $('#decline-message').val()
-                     },
+              url:"http://127.0.0.1:8000/invite/rsvp/",
+              data: JSON.stringify(dataToSend),
               success: function(){
                   $('#message').html('<div class="alert alert-success text-center">Thank you for submitting.</div>')
               }
          });
-         $('#decline-name').val("")
-         $('#decline-message').val("")
          return false; //<---- move it here
     });
-
 });
