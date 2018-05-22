@@ -22,26 +22,42 @@ $('.form-group').removeClass('row');
 
 
 $(document).ready(function() {
-    $("#rsvp-submit-DISABLEDFORNOW").click(function(event){
-        guests = [
-            {
-                "name": $('input[name=guest1-name]').val(),
-                "food_choice": $('input[name=guest1-food_choice]:checked').val()
+
+    // close navbar properly for mobile
+    $(".navbar-nav a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+
+    $("#rsvp-submit").click(function(event){
+        if (!$('#name').val()) {
+            return;
+        }
+        var guests = []
+        $('.guest-row').each(function() {
+            var name = $(this).find('input[name=guest-name]').val();
+            var choice = $(this).find('.food_radio:checked').val();
+            if (name) {
+                guests.push({
+                    name: name,
+                    food_choice: choice
+                })
             }
-        ]
+        });
         var dataToSend =
             {
             "name": $('#name').val(),
             "attending": $('input[name=attending]:checked').val(),
             "food_choice": $('input[name=food_choice]:checked').val(),
+            "song_choice": $('#song').val(),
             "guests": guests
             };
          $.ajax({
               type:"POST",
-              url:"http://127.0.0.1:8000/invite/rsvp/",
+              url:"https://sarahandzach.love/invite/rsvp/",
+              contentType: 'application/json',
               data: JSON.stringify(dataToSend),
               success: function(){
-                  $('#message').html('<div class="alert alert-success text-center">Thank you for submitting.</div>')
+                window.location.replace('/thankyou.html');
               }
          });
          return false; //<---- move it here

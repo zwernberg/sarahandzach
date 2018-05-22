@@ -90,13 +90,17 @@ label {
   background-color: #F9F7F3;
   min-height: 100%; }
 
-#accommodations {
+#party, #registry {
   background-color: #F79C88;
   min-height: 100%; 
   padding-bottom: 25px;}
 
-#party {
+#festivities, #accommodations {
   background-color: #0E212B;
+}
+
+.btn-outline-light:hover {
+  color:#212529
 }
 
 .ml-auto > a {
